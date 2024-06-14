@@ -1,5 +1,6 @@
 \documentclass[answers]{exam}
-\usepackage[english]{babel}
+\usepackage[english,spanish]{babel}
+\usepackage[autostyle]{csquotes}
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 \usepackage{amsmath, amssymb}
 \usepackage{graphicx}
@@ -8,19 +9,20 @@
 \pgfplotsset{compat=1.18}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
+\renewcommand{\solutiontitle}{\noindent\textbf{Respuesta:}\par\noindent}
+
 % Header and footer
 \pagestyle{headandfoot}
-\firstpageheader{Universidad de Bolívar}{}{\today}
-\runningheader{Universidad de Bolívar}{}{\thepage}
+\firstpageheader{Universidad de Bolívar}{}{\selectlanguage{spanish}\today} 
+\runningheader{Universidad de Bolívar}{}{Cálculo I}
 \firstpagefooter{}{}{}
-\runningfooter{}{}{}
-
+\runningfooter{}{\thepage}{}
 \begin{document}
 
 \begin{center}
 	\Large\textbf{Cálculo I}\\[1em]
 	\large\textbf{Corrección del Examen}\\[1em]
-	\large Primer Ciclo "A" - Ingeniería de Software\\[1em]
+	\large Primer Ciclo \enquote*{A} - Ingeniería de Software\\[1em]
 	% \large \today
 \end{center}
 
