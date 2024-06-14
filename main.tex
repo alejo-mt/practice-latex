@@ -10,19 +10,22 @@
 
 % Header and footer
 \pagestyle{headandfoot}
-\firstpageheader{}{}{}
-\runningheader{}{}{}
-\firstpagefooter{}{}{\thepage}
-\runningfooter{}{}{\thepage}
+\firstpageheader{Universidad de Bolívar}{}{\today}
+\runningheader{Universidad de Bolívar}{}{\thepage}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
 
 \begin{document}
 
 \begin{center}
-	\Large\textbf{Corrección de Examen de Cálculo}\\[1em]
-	\large Primer Ciclo 'A' - Ingeniería de Software\\[1em]
-	\large \today
+	\Large\textbf{Cálculo I}\\[1em]
+	\large\textbf{Corrección del Examen}\\[1em]
+	\large Primer Ciclo "A" - Ingeniería de Software\\[1em]
+	% \large \today
 \end{center}
 
+\vspace{0.5cm}
+\large\textbf{Estudiante}: Ariel Alejandro Calderón
 \vspace{0.5cm}
 
 \begin{questions}
@@ -46,10 +49,10 @@
 			\item La monotonía de la función se determina asi:
 			      \begin{itemize}
 				      \item \normalsize\textbf{Crece:} $\displaystyle
-					            \left]-\infty, 3\right[\cup \left[3, \infty\right[
+					            \left]-\infty, 3\right]\cup \left[3, \infty\right[
 				            $
 				      \item \normalsize\textbf{Decrece:} $\displaystyle
-					            \left]-3, -\sqrt{3}\right[\cup \left]-\sqrt{3}, 0\right[\cup \left[0, \sqrt{3}\right[\cup \left]\sqrt{3}, 3\right]
+					            \left[-3, -\sqrt{3}\right[\cup \left]-\sqrt{3}, \sqrt{3}\right[\cup \left]\sqrt{3}, 3\right]
 				            $
 			      \end{itemize}
 		\end{enumerate}
@@ -139,7 +142,7 @@
 			      \[
 				      \lim_{x \to 2} \frac{x^3-4x}{x^2-3x+2} = \lim_{x \to 2} \frac{x(x^2-4)}{(x-1)(x-2)}= \frac{\infty}{\infty}
 			      \]
-			      Levantamos la indeterminacion:
+			      Levantamos la indeterminación:
 			      \[
 				      x^3-4x = x(x^2-4) = x(x-2)(x+2)
 			      \]
@@ -159,4 +162,3 @@
 \end{questions}
 
 \end{document}
-
