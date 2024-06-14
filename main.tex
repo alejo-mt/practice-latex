@@ -1,29 +1,27 @@
-\documentclass[answers]{exam}
-\usepackage[english,spanish]{babel}
-\usepackage[autostyle]{csquotes}
-\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
-\usepackage{amsmath, amssymb}
-\usepackage{graphicx}
-\usepackage{enumitem}
-\usepackage{tikz,pgfplots}
-\pgfplotsset{compat=1.18}
-\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\documentclass[answers]{exam} % Clase para exámenes con respuestas
+\usepackage[english,spanish]{babel} % Soporte para inglés y español
+\usepackage[autostyle]{csquotes} % Manejo de citas
+\usepackage{amsmath, amssymb} % Paquetes para matemáticas avanzadas
+\usepackage{graphicx} % Inclusión de gráficos
+\usepackage{enumitem} % Personalización de listas enumeradas
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry} % Configuración de márgenes
+\usepackage[colorlinks=true, allcolors=blue]{hyperref} % Enlaces con color
 
-\renewcommand{\solutiontitle}{\noindent\textbf{Respuesta:}\par\noindent}
+\renewcommand{\solutiontitle}{\noindent\textbf{Respuesta:}\par\noindent} % Personalización del título de respuestas
 
-% Header and footer
+% Configuración de encabezado y pie de página
 \pagestyle{headandfoot}
 \firstpageheader{Universidad de Bolívar}{}{\selectlanguage{spanish}\today} 
 \runningheader{Universidad de Bolívar}{}{Cálculo I}
-\firstpagefooter{}{}{}
+\firstpagefooter{}{\thepage}{}
 \runningfooter{}{\thepage}{}
+
 \begin{document}
 
 \begin{center}
 	\Large\textbf{Cálculo I}\\[1em]
 	\large\textbf{Corrección del Examen}\\[1em]
 	\large Primer Ciclo \enquote*{A} - Ingeniería de Software\\[1em]
-	% \large \today
 \end{center}
 
 \vspace{0.5cm}
@@ -32,7 +30,7 @@
 
 \begin{questions}
 
-	% Question 1
+	% Pregunta 1
 	\question \large\textbf{Para la función $\displaystyle y = \frac{x^3}{x^2 - 3} $ determine:}
 	\begin{enumerate}[label=\alph*.]
 		\item El dominio y recorrido.
@@ -48,19 +46,15 @@
 				      f(-x) = \frac{(-x)^3}{(-x)^2 - 3} = \frac{-x^3}{x^2 - 3} \neq f(x) \text{ y } \neq -f(x)
 			      \]
 
-			\item La monotonía de la función se determina asi:
+			\item La monotonía de la función se determina así:
 			      \begin{itemize}
-				      \item \normalsize\textbf{Crece:} $\displaystyle
-					            \left]-\infty, 3\right]\cup \left[3, \infty\right[
-				            $
-				      \item \normalsize\textbf{Decrece:} $\displaystyle
-					            \left[-3, -\sqrt{3}\right[\cup \left]-\sqrt{3}, \sqrt{3}\right[\cup \left]\sqrt{3}, 3\right]
-				            $
+				      \item \normalsize\textbf{Crece:} $\displaystyle \left]-\infty, 3\right]\cup \left[3, \infty\right[$
+				      \item \normalsize\textbf{Decrece:} $\displaystyle \left[-3, -\sqrt{3}\right[\cup \left]-\sqrt{3}, \sqrt{3}\right[\cup \left]\sqrt{3}, 3\right]$
 			      \end{itemize}
 		\end{enumerate}
+
+		% Inclusión de la gráfica de la función
 		\vspace{0.5cm}
-
-
 		\begin{minipage}{\textwidth}
 			\centering
 			\includegraphics[width=0.9\textwidth]{public/g1.png}\\
@@ -70,7 +64,7 @@
 
 	\vspace{0.5cm}
 
-	% Question 2
+	% Pregunta 2
 	\question \large\textbf{Para la función $y = 1 + \tan x$ definida únicamente en el intervalo $\displaystyle \left]-\frac{\pi}{2}, \frac{\pi}{2}\right[$ determinar:}
 	\begin{enumerate}[label=\alph*.]
 		\item Si la función es biyectiva. Justifique su respuesta.
@@ -99,7 +93,7 @@
 
 	\newpage
 
-	% Question 3
+	% Pregunta 3
 	\question \large\textbf{Para la función $\displaystyle f(x) = 3^{x-3}-2$ determine:}
 	\begin{enumerate}[label=\alph*.]
 		\item Su inversa si existe.
@@ -126,7 +120,7 @@
 
 	\vspace{0.5cm}
 
-	% Question 4
+	% Pregunta 4
 	\question \large\textbf{Calcular los límites indicados a continuación:}
 	\begin{enumerate}[label=\alph*.]
 		\item $\displaystyle \lim_{x\to{2}} \frac{\sqrt{3^x+7}}{x+2}$
@@ -160,7 +154,6 @@
 
 	\vspace{0.5cm}
 
-	% End of questions
 \end{questions}
 
 \end{document}
